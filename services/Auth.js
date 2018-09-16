@@ -5,7 +5,7 @@ module.exports = {
     try {
       const col = dbConnect.getConnect().collection("users");
 
-      const result = await col
+      return await col
         .aggregate([
           {
             $group: { _id: "$gender", arrSex: { $push: "$$ROOT" } }
@@ -21,8 +21,6 @@ module.exports = {
           }
         ])
         .toArray();
-
-      return result;
     } catch (err) {
       return err;
     }
