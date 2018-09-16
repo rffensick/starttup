@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.4",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simvolice/effanketa.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "~2.2.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.14.0",
+    "helmet": "^3.2.0",
+    "mongodb": "^2.2.35",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "start": "nodemon bin/test"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
