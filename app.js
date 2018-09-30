@@ -1,6 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
+const cors = require("cors");
 const path = require("path");
 const logger = require("morgan");
 const bodyParser = require("body-parser");
@@ -9,6 +10,7 @@ const helmet = require("helmet");
 const dbConnect = require("./utils/dbConnect");
 
 const app = express();
+app.use(cors());
 app.set("trust proxy", "loopback");
 app.use(helmet());
 app.use(helmet.noCache());
