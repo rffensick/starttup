@@ -34,9 +34,6 @@ router.get("/", async (req, res) => {
   });
 
 
-
-
-
   res.json({ code: 0, result: resultmap });
 });
 
